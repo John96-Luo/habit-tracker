@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "pnpm run build && wrangler dev",
+    "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
     "pinia": "^4.0.2",
@@ -14,6 +15,7 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.45.1",
     "@types/node": "^24.13.2",
     "@unocss/preset-attributify": "^66.7.5",
     "@unocss/preset-uno": "^66.7.5",
@@ -22,6 +24,7 @@
     "typescript": "~6.0.2",
     "unocss": "^66.7.5",
     "vite": "^8.1.1",
-    "vue-tsc": "^3.3.5"
+    "vue-tsc": "^3.3.5",
+    "wrangler": "^4.112.0"
   }
 }
