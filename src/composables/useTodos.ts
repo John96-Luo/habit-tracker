@@ -1,5 +1,4 @@
 import type { TodoItem, DayRecord } from '../types/todo';
-import { MAX_TODOS_PER_DAY } from '../utils/constants';
 
 /**
  * 创建三个默认的空 TodoItem

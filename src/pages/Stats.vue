@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import { useTodoStore } from '../stores/todoStore';
-import { getMonthGrid, getDaysInMonth, formatDate } from '../utils/date';
+import { getMonthGrid, formatDate } from '../utils/date';
 
 const store = useTodoStore();
 

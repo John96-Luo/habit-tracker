@@ -5,7 +5,6 @@ import { loadFromStorage, saveToStorage, exportData as exportStorage, importData
 import { getTodayStr } from '../utils/date';
 import { useTodos } from '../composables/useTodos';
 import { useStats } from '../composables/useStats';
-import { MAX_TODOS_PER_DAY } from '../utils/constants';
 
 const { getOrCreateDayRecord, updateTodoContent, toggleTodo, reorderTodos } = useTodos();
 const { getWeeklyStats, getMonthlyStats } = useStats();
